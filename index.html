@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation | 婚礼邀请函</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Ma+Shan+Zheng&family=Noto+Serif+SC:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <style>
+        .bilingual {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .bilingual .en {
+            font-family: 'Cormorant Garamond', serif;
+            margin-bottom: 5px;
+        }
+        .bilingual .cn {
+            font-family: 'Noto Serif SC', serif;
+        }
+        @media (min-width: 768px) {
+            .bilingual {
+                flex-direction: row;
+                justify-content: center;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="intro-screen" id="introScreen">
+        <img src="./images/cover.jpg" alt="Wedding Photo" class="intro-image" onclick="enterSite()">
+        <button class="enter-button" onclick="enterSite()">
+            <span class="en">Click to Enter</span>
+            <span class="cn">点击进入</span>
+        </button>
+    </div>
+
+    <div class="main-content" id="mainContent">
+        <div class="background-decoration"></div>
+        <div class="container">
+            <header>
+                <img src="./images/couple.jpg" alt="Couple Photo" width="200" height="200" style="border-radius: 50%; margin-bottom: 20px;">
+                <h1 class="couple-names" style="font-size: large;">GROOM & BRIDE</h1>
+                <h2 class="chinese-names">新郎 & 新娘</h2>
+            </header>
+            
+            <main>
+                <section class="invitation">
+                    <h2 class="bilingual">
+                        <span class="en">Wedding Invitation</span>
+                        <span class="cn">婚礼邀请函</span>
+                    </h2>
+                    <p class="bilingual">
+                        <span class="en">We cordially invite you to witness our joyous moment</span>
+                        <span class="cn">诚挚邀请您见证我们的幸福时刻</span>
+                    </p>
+                    <div class="fix-container">
+                        <a href="https://maps.app.goo.gl/GcFE2vFSS7mFxg6G8" target="_blank">
+                            <img src="imgs/map.png" alt="Wedding Venue" width="400" height="300" style="margin-top: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                        </a>
+                    </div>
+                    <p style="margin-top: 10px; display: flex; justify-content: center; align-items: center; gap: 20px;">
+                        <a href="https://maps.app.goo.gl/GcFE2vFSS7mFxg6G8" target="_blank" 
+                            style="text-decoration: none; color: #5a4b41; font-weight: bold; display: flex; align-items: center; gap: 5px;">
+                            <img src="icons/google-maps.png" alt="Google Maps" width="24" height="24">
+                            <span>Google Maps | 谷歌地图</span>
+                        </a>
+                        <a href="https://waze.com/ul/hw2838y9g2" target="_blank" 
+                            style="text-decoration: none; color: #5a4b41; font-weight: bold; display: flex; align-items: center; gap: 5px;">
+                            <img src="icons/waze.png" alt="Waze" width="24" height="24">
+                            <span>Waze Navigation | Waze 导航</span>
+                        </a>
+                    </p>
+                    <p style="margin-top: 10px; display: flex; justify-content: center; align-items: center; gap: 20px;">
+                        <a href="https://dumc.my/cn/plan-your-visit/" target="_blank" 
+                            style="text-decoration: none; color: #5a4b41; font-weight: bold; display: flex; align-items: center; gap: 5px;">
+                            <img src="icons/parking-lot.png" alt="Parking Guide" width="24" height="24">
+                            <span>Parking Guide | 停车指南</span>
+                        </a>
+                    </p>
+                    
+                    <div class="illustration rings"></div>
+                </section>
+
+                <section class="details">
+                    <div class="detail-item">
+                        <h3 class="bilingual">
+                            <span class="en">Date</span>
+                            <span class="cn">日期</span>
+                        </h3>
+                        <p class="bilingual">
+                            <span class="en">Saturday, January 1, 2024</span>
+                            <span class="cn">2024年1月1日 星期六</span>
+                        </p>
+                        <div class="illustration calendar"></div>
+                    </div>
+                    <div class="detail-item">
+                        <h3 class="bilingual">
+                            <span class="en">Time</span>
+                            <span class="cn">时间</span>
+                        </h3>
+                        <p>9:00 AM - 2:00 PM</p>
+                        <div class="illustration clock"></div>
+                    </div>
+                    <div class="detail-item">
+                        <h3 class="bilingual">
+                            <span class="en">Venue</span>
+                            <span class="cn">地点</span>
+                        </h3>
+                        <p class="bilingual">
+                            <span class="en">Wedding Venue Name</span>
+                            <span class="cn">婚礼场地名称</span>
+                        </p>
+                        <div class="illustration location"></div>
+                    </div>
+                </section>
+
+                <section class="timeline">
+                    <h3 class="bilingual">
+                        <span class="en">Wedding Schedule</span>
+                        <span class="cn">婚礼流程</span>
+                    </h3>
+                    <div class="timeline-container">
+                        <div class="timeline-item">
+                            <img src="icons/completed-task.png" alt="Arrival" width="30" height="30" style="margin-right: 10px;">
+                            <span class="time">8:30 AM</span>
+                            <span class="event bilingual">
+                                <span class="en">Arrival</span>
+                                <span class="cn">报到</span>
+                            </span>
+                        </div>
+                        <div class="timeline-item">
+                            <img src="icons/bride.png" alt="Wedding Ceremony" width="30" height="30" style="margin-right: 10px;">
+                            <span class="time">9:00 AM</span>
+                            <span class="event bilingual">
+                                <span class="en">Wedding Ceremony</span>
+                                <span class="cn">婚礼仪式</span>
+                            </span>
+                        </div>
+                        <div class="timeline-item">
+                            <img src="icons/tea-ceremony.png" alt="Tea Ceremony" width="30" height="30" style="margin-right: 10px;">
+                            <span class="time">10:30 AM</span>
+                            <span class="event bilingual">
+                                <span class="en">Tea Ceremony</span>
+                                <span class="cn">敬茶仪式</span>
+                            </span>
+                        </div>
+                        <div class="timeline-item">
+                            <img src="icons/healthy.png" alt="Lunch Reception" width="30" height="30" style="margin-right: 10px;">
+                            <span class="time">11:00 AM</span>
+                            <span class="event bilingual">
+                                <span class="en">Lunch Reception</span>
+                                <span class="cn">午宴</span>
+                            </span>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="dress-code">
+                    <h3 class="bilingual">
+                        <span class="en">Dress Code</span>
+                        <span class="cn">着装要求</span>
+                    </h3>
+                    <p class="bilingual">
+                        <span class="en">Semi-formal (Soft Colors)</span>
+                        <span class="cn">半正式休闲（淡柔色）</span>
+                    </p>
+                    <p class="bilingual">
+                        <small>
+                            <span class="en">Colors are for reference only, any color is acceptable</span>
+                            <span class="cn">颜色仅供参考，任何颜色皆可</span>
+                        </small>
+                    </p>
+                    <div class="color-palette">
+                        <div class="color-swatch" style="background-color: #FFD1DC;"></div>
+                        <div class="color-swatch" style="background-color: #E6E6FA;"></div>
+                        <div class="color-swatch" style="background-color: #E0FFFF;"></div>
+                        <div class="color-swatch" style="background-color: #F0FFF0;"></div>
+                    </div>
+                    <div class="illustration dress"></div>
+                </section>
+
+                <section class="contact-section">
+                    <h3 class="bilingual">
+                        <span class="en">Contact Information</span>
+                        <span class="cn">联系方式</span>
+                    </h3>
+                    <div class="contact-container">
+                        <div class="contact-card">
+                            <img src="./icons/bridegroom.png" alt="Groom" class="contact-icon">
+                            <span class="contact-name bilingual">
+                                <span class="en">Groom</span>
+                                <span class="cn">新郎</span>
+                            </span>
+                            <a href="https://wa.me/1234567890" class="whatsapp-btn" target="_blank">
+                                <img src="./icons/whatsapp.png" alt="WhatsApp">
+                            </a>
+                        </div>
+                        <div class="contact-card">
+                            <img src="./icons/bride2.png" alt="Bride" class="contact-icon">
+                            <span class="contact-name bilingual">
+                                <span class="en">Bride</span>
+                                <span class="cn">新娘</span>
+                            </span>
+                            <a href="https://wa.me/1234567890" class="whatsapp-btn" target="_blank">
+                                <img src="./icons/whatsapp.png" alt="WhatsApp">
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="message">
+                    <div class="fix-container">
+                        <img src="./uploads/photo3.png" alt="GROOM & BRIDE" width="250" height="350" style="margin-bottom: 20px;">
+                    </div>
+                    <p class="bilingual">
+                        <span class="en">
+                            Dear family and friends,<br><br>
+                            Our wedding becomes even more special and complete with your presence. We sincerely thank you for taking time out of your busy schedules to join us in witnessing this joyous moment. Every blessing and smile will become the most precious memory in our lives. We are grateful for the fate that brings us together, and we hope to share many more beautiful moments with you in the days to come!
+                        </span>
+                        <span class="cn">
+                            亲爱的家人和朋友，<br><br>
+                            我们的婚礼因为有你们的参与，而倍感温馨与圆满。感谢你们从百忙中抽空前来，与我们共同见证这一幸福的时刻。每一份祝福，每一个微笑都将成为我们人生中最珍贵的记忆。感恩缘分让我们相聚，愿今后的每一天，都能与你们共享更多的美好时光！
+                        </span>
+                    </p>
+                    <div class="illustration hearts"></div>
+                </section>
+
+                <section class="download">
+                    <h3 class="bilingual">
+                        <span class="en">Download Invitation</span>
+                        <span class="cn">下载邀请卡</span>
+                    </h3>
+                    <button class="download-button" onclick="downloadInvitation()">
+                        <span class="en">Download Invitation</span>
+                        <span class="cn">下载邀请卡</span>
+                    </button>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
