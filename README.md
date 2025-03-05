@@ -37,13 +37,9 @@ git clone https://github.com/yenyoong99/wedding_invitation.git
 ### 2. 图片替换 | Image Replacement
 将您的照片放在以下目录，并确保文件名匹配：
 ```
-/images/
+/uploads/
   ├── cover.jpg       # 封面图片 | Cover photo
   ├── couple.jpg      # 新人合照 | Couple photo
-  └── gallery/        # 相册图片 | Gallery photos
-      ├── photo1.jpg
-      ├── photo2.jpg
-      └── photo3.jpg
 ```
 
 ### 3. 背景音乐 | Background Music
