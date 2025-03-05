@@ -40,6 +40,7 @@ git clone https://github.com/yenyoong99/wedding_invitation.git
 /uploads/
   ├── cover.jpg       # 封面图片 | Cover photo
   ├── couple.jpg      # 新人合照 | Couple photo
+  ├── photo3.png      # 照片3 | Photo 3
 ```
 
 ### 3. 背景音乐 | Background Music
@@ -95,8 +96,10 @@ wedding-invitation/
 ├── styles.css          # 样式文件
 ├── script.js           # 脚本文件
 ├── images/            # 图片目录
+├── uploads/           # 上传文件目录
 ├── music/             # 音乐目录
 └── icons/             # 图标目录
+
 ```
 
 ## 🔧 高级自定义 | Advanced Customization
